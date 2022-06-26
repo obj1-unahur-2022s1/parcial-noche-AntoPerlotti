@@ -2,7 +2,7 @@ import comidas.*
 describe "Test de Comidas" {
 	const hamburguesaCarne= new HamburguesaDeCarne(tipoDePan= new PanCasero())
 	const hamburguesaVege= new HamburguesaVege(tipoDePan= new PanMasaMadre(),estaHechaDe= "garbanzos")
-	const provoleta= new Provoleta(pesoProvo= 190)
+	const provoleta= new Provoleta(peso= 190)
 	const asado= new Cortes(nombre="asado", calidad= 10, pesoCorte=250)
 	const entrania= new Cortes(nombre="entraña", calidad= 7, pesoCorte=200)
 	const chorizo= new Cortes(nombre="chorizo", calidad= 8, pesoCorte=50)
@@ -10,7 +10,7 @@ describe "Test de Comidas" {
 	
 	
 	method initialize() {
-		hamburguesaVege.peso(320)
+
 	}
 	
 	test "Valoración de la Hambruguesa de Carne con pan casero" {

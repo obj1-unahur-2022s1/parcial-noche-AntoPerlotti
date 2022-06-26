@@ -1,26 +1,23 @@
 class Plato {
-	var property peso=0
-	var property valoracion=0
+	method peso()
+	method valoracion()
 	
 	
 	method esAptoVegetariano()
 	
 	method esAbundante(){
-		return peso > 250
+		return self.peso() > 250
 	}
 	
 }
 
 class Provoleta inherits Plato{
-	const pesoProvo
+	var property peso
 	const tieneEspecias= true
 	
-	override method peso(){
-		return pesoProvo
-	}
 	
 	override method esAptoVegetariano(){
-		return (not tieneEspecias)
+		return not tieneEspecias
 	}
 	
 	method esEspecial(){
@@ -106,7 +103,7 @@ class Parrillada inherits Plato{
 }
 
 class Cortes{
-	const nombre
+	const property nombre
 	const property calidad
 	var property pesoCorte
 }
