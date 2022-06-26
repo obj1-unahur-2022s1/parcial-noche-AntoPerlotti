@@ -1,9 +1,10 @@
 import comidas.*
 import comensales.*
+//ajustes
 describe "Test de Comensales" {
 	const vegetariano= new Vegetariano(peso=68500)
-	const provoleta= new Provoleta(pesoProvo= 190)
-	const hamburguesaVege= new HamburguesaVege(tipoDePan= new PanMasaMadre(),estaHechaDe= "garbanzos")
+	const provoleta= new Provoleta(peso= 190)
+	const hamburguesaVege= new HamburguesaVege( tipoDePan= new PanMasaMadre(),estaHechaDe= "garbanzos")
 	const comensalPopu= new HambrePopular(peso=85000)
 	const asado= new Cortes(nombre="asado", calidad= 10, pesoCorte=250)
 	const entrania= new Cortes(nombre="entraña", calidad= 7, pesoCorte=200)
@@ -15,7 +16,6 @@ describe "Test de Comensales" {
 	
 	method initialize() {
 		vegetariano.comer(provoleta)
-		hamburguesaVege.peso(250)
 		vegetariano.comer(hamburguesaVege)
 		vegetariano.comer(hamburguesaVege)
 		comensalPopu.comer(parrillada)
